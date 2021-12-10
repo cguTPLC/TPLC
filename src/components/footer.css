@@ -1,0 +1,29 @@
+.footer{
+    background-color:rgb(53, 52, 52);
+    position:relative;
+    bottom:0px;
+    height:150px;
+    width:100%;
+    color:rgba(255, 255, 255)
+}
+
+.img{
+    position:relative;
+    top:40%;
+    left:10%;
+    float: left;
+}
+
+.copyright{
+    position:absolute;
+    display:inline;
+    right:5px;
+    top:77%;
+}
+
+.github{
+    position:absolute;
+    display:inline;
+    right:350px;
+    top:75%;
+}

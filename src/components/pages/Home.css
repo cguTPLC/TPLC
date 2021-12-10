@@ -1,0 +1,31 @@
+h1{
+    text-align:center;
+    font-family:STLiti;
+    font-weight:bolder;
+}
+
+.introduce{
+    position:relative;
+    width:70%;
+    overflow:auto;
+    margin:50px auto;
+    padding-left: 20%;
+}
+
+.poetry{
+    text-align: center;
+    font-size: 35px;
+}
+
+.about{
+    text-align: center;
+    font-size: 25px;
+}
+
+.introduce>.left{
+    float:left;
+}
+
+p{
+    font-family:SingkaibeiEG-Bold-GB GSKB00B 29009;
+}
