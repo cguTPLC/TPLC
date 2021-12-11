@@ -17,39 +17,40 @@ function About() {
 
     return (
         <>
-            <div className='collection-content'>
-                <ul className='left-table'>
-                    <li className='red'    onClick={() => setYear('109')}><div>109</div></li>
-                    <li className='orange' onClick={() => setYear('108')}><div>108</div></li>
-                    <li className='yellow' onClick={() => setYear('107')}><div>107</div></li>
-                    <li className='green'  onClick={() => setYear('106')}><div>106</div></li>
-                    <li className='blue'   onClick={() => setYear('105')}><div>105</div></li>
-                    <li className='indigo' onClick={() => setYear('104')}><div>104</div></li>
-                    <li className='purple' onClick={() => setYear('103')}><div>103</div></li>
-                    <li className='red'    onClick={() => setYear('102')}><div>102</div></li>
-                </ul>
-                <div className='downloadSheet container-fluid'>
-                {(() => {
-                switch (year) {
-                    case '109':
-                        return <div><Page109/></div>
-                    case '108':
-                        return <div><Page108/></div>
-                    case '107':
-                        return <div><Page107/></div>
-                    case '106':
-                        return <div><Page106/></div>
-                    case '105':
-                        return <div><Page105/></div>
-                    case '104':
-                        return <div><Page104/></div>
-                    case '103':
-                        return <div><Page103/></div>
-                    case '102':
-                        return <div><Page102/></div>
-                }})()}
+            <div className='container-fluid'>
+                <div className='row'>
+                    <ul className='col-1 left-table'>
+                        <li className='red'    onClick={() => setYear('109')}>109</li>
+                        <li className='orange' onClick={() => setYear('108')}>108</li>
+                        <li className='yellow' onClick={() => setYear('107')}>107</li>
+                        <li className='green'  onClick={() => setYear('106')}>106</li>
+                        <li className='blue'   onClick={() => setYear('105')}>105</li>
+                        <li className='indigo' onClick={() => setYear('104')}>104</li>
+                        <li className='purple' onClick={() => setYear('103')}>103</li>
+                        <li className='red'    onClick={() => setYear('102')}>102</li>
+                    </ul>
+                    <div className='col-11'>
+                    {(() => {
+                    switch (year) {
+                        case '109':
+                            return <div><Page109/></div>
+                        case '108':
+                            return <div><Page108/></div>
+                        case '107':
+                            return <div><Page107/></div>
+                        case '106':
+                            return <div><Page106/></div>
+                        case '105':
+                            return <div><Page105/></div>
+                        case '104':
+                            return <div><Page104/></div>
+                        case '103':
+                            return <div><Page103/></div>
+                        case '102':
+                            return <div><Page102/></div>
+                    }})()}
+                    </div>
                 </div>
-                
             </div>
         </>
     )
