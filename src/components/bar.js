@@ -14,7 +14,7 @@ export default function bar() {
       <span className="animate-box"></span>
       <div>
         <div className="logo">
-          <a href="https://cgutplc.github.io/TPLCweb/">
+          <a href="https://cgutplc.github.io/TPLC/">
             <img src={CGU_Logo} width="200" height="50" alt="第一張圖片"/>
           </a>
           <div className="logo-title"><b>|</b>台灣詩•鄉土情</div>
@@ -26,7 +26,7 @@ export default function bar() {
                         <div className="button">
                           <div className="circle"></div>
                           <Link 
-                          to="/TPLCweb"
+                          to="/TPLC"
                           style={style}
                           activeClassName="active"
                           >首頁</Link>
@@ -36,7 +36,7 @@ export default function bar() {
                         <div className="button">
                           <div className="circle"></div>
                           <Link 
-                          to="/TPLCweb/about" 
+                          to="/TPLC/about" 
                           style={style}
                           activeClassName="active"
                           >作品欣賞</Link>
@@ -46,7 +46,7 @@ export default function bar() {
                         <div className="button">
                           <div className="circle"></div>
                           <Link 
-                          to="/TPLCweb/users" 
+                          to="/TPLC/users" 
                           style={style}
                           activeClassName="active"
                           >生活影像</Link>

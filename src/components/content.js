@@ -10,9 +10,9 @@ export default function Content (){
     
     return (
         <div className="content">
-            <Route path="/TPLCweb" exact component={Home} />
-            <Route path="/TPLCweb/about" component={About} />
-            <Route path="/TPLCweb/users" component={Users} />
+            <Route path="/TPLC" exact component={Home} />
+            <Route path="/TPLC/about" component={About} />
+            <Route path="/TPLC/users" component={Users} />
             <p></p>
             <p></p>
             <p></p>
