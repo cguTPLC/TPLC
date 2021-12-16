@@ -5,10 +5,10 @@ import Page109 from './Users/Page109'
 import Page108 from './Users/Page108'
 import Page107 from './Users/Page107'
 import Page106 from './Users/Page106'
-//import Page105 from './Users/Page105'
-//import Page104 from './Users/Page104'
-//import Page103 from './Users/Page103'
-//import Page102 from './Users/Page102'
+import Page105 from './Users/Page105'
+import Page104 from './Users/Page104'
+import Page103 from './Users/Page103'
+import Page102 from './Users/Page102'
 
 
 function Users() {
@@ -39,13 +39,13 @@ function Users() {
                         case '106':
                             return <Page106/>
                         case '105':
-                            //return <Page105/>
+                            return <Page105/>
                         case '104':
-                            //return <Page104/>
+                            return <Page104/>
                         case '103':
-                            //return <Page103/>
+                            return <Page103/>
                         case '102':
-                            //return <Page102/>
+                            return <Page102/>
                     }})()}
                     </div>
                 </div>

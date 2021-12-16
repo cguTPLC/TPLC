@@ -1,11 +1,11 @@
 import React from 'react'
 
-const SecondSemester3 = () => {
+const FirstSemester3 = () => {
     return (
-        <div>
-            SecondSemester3
+        <div className='row'>
+
         </div>
     )
 }
 
-export default SecondSemester3
+export default FirstSemester3
