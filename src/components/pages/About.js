@@ -9,14 +9,27 @@ import Page105 from './About/Page105'
 import Page104 from './About/Page104'
 import Page103 from './About/Page103'
 import Page102 from './About/Page102'
-
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import img from './About/photo/map.png'
+import img2 from './About/photo/109志清湖.png'
+import img3 from './About/photo/109青蛙湖2.PNG'
+import img4 from './About/photo/109木棧道.png'
+import img5 from './About/photo/109青蛙湖.png'
+import img6 from './About/photo/109管八.png'
+import img7 from './About/photo/109操場.PNG'
+import img8 from './About/photo/109雕像.PNG'
+import img9 from './About/photo/109明德.PNG'
 function About() {
     const [year, setYear] = useState('109');
-
+    const [mode, setMode] = useState(true);
+    const [place, setPlace] = useState('Min-De');
     return (
-        <>
+        <>  <div className='bn'>
+                <Button variant="outline-secondary" className='col' onClick={() => setMode(true)}>依照年份</Button>
+                <Button variant="outline-secondary" className='col' onClick={() => setMode(false)}>依照地點</Button>
+            </div>
+            {mode ? 
             <div className='container-fluid'>
                 <div className='row'>
                     <ul className='col-1 left-table'>
@@ -51,7 +64,95 @@ function About() {
                     }})()}
                     </div>
                 </div>
-            </div>
+            </div> :
+            <div>
+                <div className='container-fluid'>
+                    <div className='row'>
+                        <div className='col'>
+                            <span className='Min-De'    onClick={() => (setPlace('Min-De'))}>明德樓</span>
+                            <span className='Ju-De'     onClick={() => (setPlace('Ju-De'))}>據德樓</span>
+                            <span className='Yun-De'    onClick={() => (setPlace('Yun-De'))}>韻德樓</span>
+                            <span className='Hero'      onClick={() => (setPlace('Hero'))}>好漢坡</span>
+                            <span className='Engineering'onClick={() => (setPlace('Engineering'))}>工院</span>
+                            <span className='Library'   onClick={() => (setPlace('Library'))}>圖書館</span>
+                            <span className='Management'onClick={() => (setPlace('Management'))}>館院</span>
+                            <span className='Sports'    onClick={() => (setPlace('Sports'))}>操場</span>
+                            <span className='SA'        onClick={() => (setPlace('SA'))}>活動中心</span>
+                            <span className='Scenic'    onClick={() => (setPlace('Scenic'))}>青蛙湖</span>
+                            <span className='Medical1'  onClick={() => (setPlace('Medical1'))}>第一醫學大樓</span>
+                            <span className='Medical2'  onClick={() => (setPlace('Medical2'))}>第二醫學大樓</span>
+                            <span className='Formosa'   onClick={() => (setPlace('Formosa'))}>文物館</span>
+                            <span className='Garden'    onClick={() => (setPlace('Garden'))}>創辦人紀念公園</span>
+                            <span className='ZC'        onClick={() => (setPlace('ZC'))}>志清湖</span>
+                            <span className='Wood'      onClick={() => (setPlace('Wood'))}>木棧道</span>
+                            <div className=''>
+                                <img src={img} width={900} height={900} ></img>
+                            </div>
+                        </div>
+                        <div className='col'>
+                            {(() => {
+                            switch (place) {
+                                case 'Min-De':
+                                    return (<div className='row'>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img9} width='400' height='250' ></img>
+                                    </div></div>)
+                                case 'Ju-De':
+                                    return <div><Page108/></div>
+                                case 'Yun-De':
+                                    return <div><Page107/></div>
+                                case 'Hero':
+                                    return <div><Page106/></div>
+                                case 'Engineering':
+                                    return <div><Page105/></div>
+                                case 'Library':
+                                    return <div><Page104/></div>
+                                case 'Management':
+                                    return (<div className='row'>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img6} width='400' height='250' ></img>
+                                    </div></div>)
+                                case 'Sports':
+                                    return (<div className='row'>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img7} width='400' height='250' ></img>
+                                    </div></div>)
+                                case 'SA':
+                                    return <div><Page102/></div>
+                                case 'Scenic':
+                                    return (<div className='row'>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img3} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img5} width='400' height='250' ></img>
+                                        </div></div>)
+                                case 'Medical1':
+                                    return <div><Page102/></div>
+                                case 'Medical2':
+                                    return <div><Page102/></div>
+                                case 'Formosa':
+                                    return <div><Page102/></div>
+                                case 'Garden':
+                                    return (<div className='row'>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img8} width='400' height='250' ></img>
+                                    </div></div>)
+                                case 'ZC':
+                                    return (<div className='row'>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img2} width='400' height='250' ></img>
+                                        </div></div>)
+                                case 'Wood':
+                                    return (<div className='row'>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img4} width='400' height='250' ></img>
+                                        </div></div>)
+                            }})()}
+                        </div>
+                    </div>
+                </div>
+            </div>}
         </>
     )
 }
