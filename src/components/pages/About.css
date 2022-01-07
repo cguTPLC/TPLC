@@ -51,3 +51,7 @@ ul.right-table{
 .bn{
   margin:1em;
 }
+
+.side{
+  cursor: pointer;
+}

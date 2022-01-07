@@ -68,28 +68,28 @@ function About() {
             <div>
                 <div className='container-fluid'>
                     <div className='row'>
-                        <div className='col'>
-                            <span className='Min-De'    onClick={() => (setPlace('Min-De'))}>明德樓</span>
-                            <span className='Ju-De'     onClick={() => (setPlace('Ju-De'))}>據德樓</span>
-                            <span className='Yun-De'    onClick={() => (setPlace('Yun-De'))}>韻德樓</span>
-                            <span className='Hero'      onClick={() => (setPlace('Hero'))}>好漢坡</span>
-                            <span className='Engineering'onClick={() => (setPlace('Engineering'))}>工院</span>
-                            <span className='Library'   onClick={() => (setPlace('Library'))}>圖書館</span>
-                            <span className='Management'onClick={() => (setPlace('Management'))}>館院</span>
-                            <span className='Sports'    onClick={() => (setPlace('Sports'))}>操場</span>
-                            <span className='SA'        onClick={() => (setPlace('SA'))}>活動中心</span>
-                            <span className='Scenic'    onClick={() => (setPlace('Scenic'))}>青蛙湖</span>
-                            <span className='Medical1'  onClick={() => (setPlace('Medical1'))}>第一醫學大樓</span>
-                            <span className='Medical2'  onClick={() => (setPlace('Medical2'))}>第二醫學大樓</span>
-                            <span className='Formosa'   onClick={() => (setPlace('Formosa'))}>文物館</span>
-                            <span className='Garden'    onClick={() => (setPlace('Garden'))}>創辦人紀念公園</span>
-                            <span className='ZC'        onClick={() => (setPlace('ZC'))}>志清湖</span>
-                            <span className='Wood'      onClick={() => (setPlace('Wood'))}>木棧道</span>
-                            <div className=''>
-                                <img src={img} width={900} height={900} ></img>
-                            </div>
+                        <div className='col-1'>
+                            <span className='side'    onClick={() => (setPlace('Min-De'))}>明德樓</span><br/>
+                            <span className='side'     onClick={() => (setPlace('Ju-De'))}>據德樓</span><br/>
+                            <span className='side'    onClick={() => (setPlace('Yun-De'))}>韻德樓</span><br/>
+                            <span className='side'      onClick={() => (setPlace('Hero'))}>好漢坡</span><br/>
+                            <span className='side'onClick={() => (setPlace('Engineering'))}>工院</span><br/>
+                            <span className='side'   onClick={() => (setPlace('Library'))}>圖書館</span><br/>
+                            <span className='side'onClick={() => (setPlace('Management'))}>館院</span><br/>
+                            <span className='side'    onClick={() => (setPlace('Sports'))}>操場</span><br/>
+                            <span className='side'        onClick={() => (setPlace('SA'))}>活動中心</span><br/>
+                            <span className='side'    onClick={() => (setPlace('Scenic'))}>青蛙湖</span><br/>
+                            <span className='side'  onClick={() => (setPlace('Medical1'))}>第一醫學大樓</span><br/>
+                            <span className='side'  onClick={() => (setPlace('Medical2'))}>第二醫學大樓</span><br/>
+                            <span className='side'   onClick={() => (setPlace('Formosa'))}>文物館</span><br/>
+                            <span className='side'    onClick={() => (setPlace('Garden'))}>創辦人紀念公園</span><br/>
+                            <span className='side'        onClick={() => (setPlace('ZC'))}>志清湖</span><br/>
+                            <span className='side'      onClick={() => (setPlace('Wood'))}>木棧道</span><br/>
                         </div>
-                        <div className='col'>
+                        <div className='col-5'>
+                                <img src={img} width={650} height={650} ></img>
+                            </div>
+                        <div className='col-5'>
                             {(() => {
                             switch (place) {
                                 case 'Min-De':

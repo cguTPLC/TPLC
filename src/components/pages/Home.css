@@ -1,7 +1,8 @@
 h1{
     text-align:center;
-    font-family:STLiti;
-    font-weight:bolder;
+    font-weight:bold;
+    font-family:DFKai-sb;
+    letter-spacing:8px;
 }
 
 .introduce{
@@ -13,13 +14,15 @@ h1{
 }
 
 .poetry{
+    font-family:DFKai-sb;
+    font-weight:bold;
     text-align: center;
     font-size: 35px;
 }
 
 .about{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .introduce>.left{
@@ -28,4 +31,8 @@ h1{
 
 p{
     font-family:SingkaibeiEG-Bold-GB GSKB00B 29009;
+}
+
+.home{
+    letter-spacing:15px;
 }
