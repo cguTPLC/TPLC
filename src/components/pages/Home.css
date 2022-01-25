@@ -21,8 +21,10 @@ h1{
 }
 
 .about{
+    font-family:DFKai-sb;
     text-align: center;
     font-size: 30px;
+    letter-spacing:6px;
 }
 
 .introduce>.left{
@@ -34,5 +36,5 @@ p{
 }
 
 .home{
-    letter-spacing:15px;
+    letter-spacing:8px;
 }
