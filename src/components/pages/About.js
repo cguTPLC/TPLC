@@ -71,7 +71,7 @@ function About() {
                         <div className='col-1'>
                             <span className='side'    onClick={() => (setPlace('Min-De'))}>明德樓</span><br/>
                             <span className='side'     onClick={() => (setPlace('Ju-De'))}>據德樓</span><br/>
-                            <span className='side'    onClick={() => (setPlace('Yun-De'))}>韻德樓</span><br/>
+                            <span className='side'    onClick={() => (setPlace('Yun-De'))}>蘊德樓</span><br/>
                             <span className='side'      onClick={() => (setPlace('Hero'))}>好漢坡</span><br/>
                             <span className='side'onClick={() => (setPlace('Engineering'))}>工院</span><br/>
                             <span className='side'   onClick={() => (setPlace('Library'))}>圖書館</span><br/>
@@ -82,12 +82,12 @@ function About() {
                             <span className='side'  onClick={() => (setPlace('Medical1'))}>第一醫學大樓</span><br/>
                             <span className='side'  onClick={() => (setPlace('Medical2'))}>第二醫學大樓</span><br/>
                             <span className='side'   onClick={() => (setPlace('Formosa'))}>文物館</span><br/>
-                            <span className='side'    onClick={() => (setPlace('Garden'))}>創辦人紀念公園</span><br/>
+                            <span className='side'    onClick={() => (setPlace('Garden'))}>創辦人公園</span><br/>
                             <span className='side'        onClick={() => (setPlace('ZC'))}>志清湖</span><br/>
                             <span className='side'      onClick={() => (setPlace('Wood'))}>木棧道</span><br/>
                         </div>
                         <div className='col-5'>
-                                <img src={img} width={650} height={650} ></img>
+                                <img src={img} width={600} height={600} ></img>
                             </div>
                         <div className='col-5'>
                             {(() => {

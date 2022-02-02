@@ -49,7 +49,7 @@
 
 .shadow {
     position: relative;
-    background: rgba(255,255,255,1);
+    background: rgb(255, 249, 238);
     width: 90%;
     height:180px;
     padding: 30px;
@@ -98,7 +98,7 @@ ul.Header_navbar{
 ul.Header_navbar li{
     position:relative;
     display:inline;
-    background-color: white;
+    background-color: rgb(255, 249, 238);
     align-items: center;
 }
 
@@ -144,7 +144,7 @@ ul.Header_navbar a{
     opacity: 0;
     line-height: 40px;
     border-radius: 50%;
-    background: rgb(200, 200, 200);
+    background: rgb(252, 229, 181);
     position: absolute;
     transition: all .4s ease-Out;
     top: 20px;
