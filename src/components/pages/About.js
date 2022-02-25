@@ -20,6 +20,44 @@ import img6 from './About/photo/109管八.png'
 import img7 from './About/photo/109操場.PNG'
 import img8 from './About/photo/109雕像.PNG'
 import img9 from './About/photo/109明德.PNG'
+import img10 from './About/photo/102木棧道.png'
+import img11 from './About/photo/102王永慶雕像.png'
+import img12 from './About/photo/102王永慶雕像2.png'
+import img13 from './About/photo/103木棧道.png'
+import img14 from './About/photo/103木棧道2.png'
+import img15 from './About/photo/103王永慶雕像.png'
+import img16 from './About/photo/103好漢坡.png'
+import img17 from './About/photo/104木棧道.png'
+import img18 from './About/photo/104王永慶雕像.png'
+import img19 from './About/photo/104青蛙湖.png'
+import img20 from './About/photo/104繁星.png'
+import img21 from './About/photo/105王永慶雕像.png'
+import img22 from './About/photo/105志清湖.png'
+import img23 from './About/photo/106木棧道 (2).png'
+import img24 from './About/photo/106木棧道.png'
+import img25 from './About/photo/106好漢坡.png'
+import img26 from './About/photo/106希望樹.png'
+import img27 from './About/photo/106青蛙湖.png'
+import img28 from './About/photo/106圖書館.png'
+import img29 from './About/photo/107文物館.png'
+import img30 from './About/photo/107志清湖.png'
+import img31 from './About/photo/107青蛙湖.png'
+import img32 from './About/photo/107操場.png'
+import img33 from './About/photo/108木亭.png'
+import img34 from './About/photo/108木亭2.png'
+import img35 from './About/photo/108木棧道.png'
+import img36 from './About/photo/108木棧道2.png'
+import img37 from './About/photo/108志清湖.png'
+import img38 from './About/photo/108志清湖2.png'
+import img39 from './About/photo/108明德.png'
+import img40 from './About/photo/109木棧道.png'
+import img41 from './About/photo/109志清湖.png'
+import img42 from './About/photo/109明德.PNG'
+import img43 from './About/photo/109青蛙湖.png'
+import img44 from './About/photo/109青蛙湖2.PNG'
+import img45 from './About/photo/109管八.png'
+import img46 from './About/photo/109操場.PNG'
+import img47 from './About/photo/109雕像.PNG'
 function About() {
     const [year, setYear] = useState('109');
     const [mode, setMode] = useState(true);
@@ -86,39 +124,68 @@ function About() {
                             <span className='side'        onClick={() => (setPlace('ZC'))}>志清湖</span><br/>
                             <span className='side'      onClick={() => (setPlace('Wood'))}>木棧道</span><br/>
                         </div>
-                        <div className='col-5'>
-                                <img src={img} width={600} height={600} ></img>
+                        <div className='col-6'>
+                                <img className="bigMap"src={img}></img>
                             </div>
-                        <div className='col-5'>
+                        <div className='col-4 photo-scroll'>
                             {(() => {
                             switch (place) {
                                 case 'Min-De':
                                     return (<div className='row'>
                                     <div className='col-6 m-3 ca'>
                                         <img src={img9} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img39} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img42} width='400' height='250' ></img>
                                     </div></div>)
                                 case 'Ju-De':
-                                    return <div><Page108/></div>
+                                    return <div>無創作內容</div>
                                 case 'Yun-De':
-                                    return <div><Page107/></div>
+                                    return <div>無創作內容</div>
                                 case 'Hero':
-                                    return <div><Page106/></div>
+                                    return <div className='row'>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img16} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img25} width='400' height='250' ></img>
+                                    </div></div>
                                 case 'Engineering':
-                                    return <div><Page105/></div>
+                                    return <div>無創作內容</div>
                                 case 'Library':
-                                    return <div><Page104/></div>
+                                    return <div className='row'>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img28} width='400' height='250' ></img>
+                                    </div>
+                                    </div>
                                 case 'Management':
                                     return (<div className='row'>
                                     <div className='col-6 m-3 ca'>
                                         <img src={img6} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img20} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img45} width='400' height='250' ></img>
                                     </div></div>)
                                 case 'Sports':
                                     return (<div className='row'>
                                     <div className='col-6 m-3 ca'>
                                         <img src={img7} width='400' height='250' ></img>
-                                    </div></div>)
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img32} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img46} width='400' height='250' ></img>
+                                    </div>
+                                    </div>)
                                 case 'SA':
-                                    return <div><Page102/></div>
+                                    return <div>無創作內容</div>
                                 case 'Scenic':
                                     return (<div className='row'>
                                         <div className='col-6 m-3 ca'>
@@ -126,27 +193,118 @@ function About() {
                                         </div>
                                         <div className='col-6 m-3 ca'>
                                             <img src={img5} width='400' height='250' ></img>
-                                        </div></div>)
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img19} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img31} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img43} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img44} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img27} width='400' height='250' ></img>
+                                        </div>
+                                        </div>)
                                 case 'Medical1':
-                                    return <div><Page102/></div>
+                                    return <div>無創作內容</div>
                                 case 'Medical2':
-                                    return <div><Page102/></div>
+                                    return <div className='row'>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img26} width='400' height='250' ></img>
+                                    </div>
+                                </div>
                                 case 'Formosa':
-                                    return <div><Page102/></div>
+                                    return <div className='row'>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img29} width='400' height='250' ></img>
+                                        </div>
+                                    </div>
                                 case 'Garden':
                                     return (<div className='row'>
                                     <div className='col-6 m-3 ca'>
                                         <img src={img8} width='400' height='250' ></img>
-                                    </div></div>)
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img11} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img12} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img15} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img18} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img21} width='400' height='250' ></img>
+                                    </div>
+                                    <div className='col-6 m-3 ca'>
+                                        <img src={img47} width='400' height='250' ></img>
+                                    </div>
+                                    </div>)
                                 case 'ZC':
                                     return (<div className='row'>
                                         <div className='col-6 m-3 ca'>
                                             <img src={img2} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img22} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img30} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img37} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img38} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img41} width='400' height='250' ></img>
                                         </div></div>)
                                 case 'Wood':
                                     return (<div className='row'>
                                         <div className='col-6 m-3 ca'>
                                             <img src={img4} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img10} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img13} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img14} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img17} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img23} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img24} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img33} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img36} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img40} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img34} width='400' height='250' ></img>
+                                        </div>
+                                        <div className='col-6 m-3 ca'>
+                                            <img src={img35} width='400' height='250' ></img>
                                         </div></div>)
                             }})()}
                         </div>
